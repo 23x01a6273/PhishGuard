@@ -1,0 +1,15 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .land { fill: #1f2937; stroke: #374151; stroke-width: 0.5; }
+  </style>
+  <path class="land" d="M150,100 Q200,50 250,100 T350,150 T450,100 T550,150 T650,100 T750,150 V250 H50 V150 T150,100 Z" opacity="0.5" />
+  <circle cx="200" cy="200" r="10" class="land" opacity="0.3" />
+  <circle cx="600" cy="250" r="15" class="land" opacity="0.3" />
+  <!-- Simple abstract world map representation -->
+  <path class="land" d="M50,80 L80,60 L100,70 L90,100 Z" /> <!-- North America-ish -->
+  <path class="land" d="M120,150 L150,130 L160,160 L130,180 Z" /> <!-- South America-ish -->
+  <path class="land" d="M300,80 L350,70 L360,100 L320,120 Z" /> <!-- Europe-ish -->
+  <path class="land" d="M350,130 L400,120 L420,180 L340,190 Z" /> <!-- Africa-ish -->
+  <path class="land" d="M500,80 L650,70 L660,150 L520,160 Z" /> <!-- Asia-ish -->
+  <path class="land" d="M600,200 L650,210 L640,240 L590,230 Z" /> <!-- Australia-ish -->
+</svg>
