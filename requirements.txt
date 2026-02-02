@@ -5,3 +5,6 @@ pandas
 numpy
 joblib
 gunicorn
+python-whois
+requests
+beautifulsoup4
