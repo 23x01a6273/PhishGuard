@@ -13,6 +13,10 @@ from urllib.parse import urlparse
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
+@app.route('/')
+def health_check():
+    return jsonify({"status": "healthy", "service": "PhishGuard Backend"}), 200
+
 # Load model (if exists, otherwise use a placeholder)
 MODEL_PATH = 'phishing_model.pkl'
 model = None
