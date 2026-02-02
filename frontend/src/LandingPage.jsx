@@ -25,8 +25,11 @@ function LandingPage() {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 30000); // 30s timeout for real analysis
       
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-      const response = await fetch(`${API_URL}/api/scan`, {
+      // Use production backend if available, otherwise local
+      const backendUrl = 'https://web-production-c05b.up.railway.app';
+      // const backendUrl = 'http://localhost:5000'; // Fallback for local dev
+
+      const response = await fetch(`${backendUrl}/api/scan`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
